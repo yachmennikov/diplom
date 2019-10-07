@@ -9,10 +9,21 @@ import 'es6-promise';
 import 'fetch-polyfill';
 
 
-import countTimer from './modules/timer';
+import myModalWindows from './modules/myModalWindows';
+import accordion from './modules/accordion';
+import serverRequest from './modules/fetch';
+import showBlocks from './modules/showBlocks';
+import calculator from './modules/calculator';
 
 
-
-// burger menu
-toggleMenu();
+// All popup windows
+myModalWindows();
+// accordion
+accordion();
+// serverRequest Fetch
+serverRequest();
+// show hidden blocks
+showBlocks();
+// calculator
+calculator();
 
